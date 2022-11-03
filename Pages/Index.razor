@@ -1,0 +1,11 @@
+﻿@page "/"
+
+@((MarkupString)markup)
+
+@code
+{
+    string markup = "";
+    protected override void OnInitialized() {
+        markup = TestLayout.Render();
+    }
+}
